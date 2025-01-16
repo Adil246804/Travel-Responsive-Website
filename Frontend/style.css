@@ -1,0 +1,1259 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pavanam&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Paytone One", serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: ease .40s;
+}
+
+.Logo{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Kumar One", serif;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+span{
+    color: black;
+    font-family: "Lalezar", serif;
+}
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+
+.Navbar a{
+    color: white;
+    font-size: 12.6px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.Navbar a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 5px 10px 30px gray;
+    border-radius: 4.4px;
+}
+
+#Menu-Button{
+    color: black;
+    font-size: 36px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.Home{
+    padding: 80px 18%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../Frontend/Images/1.1.avif);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.Home-Text h1{
+    font-size: 4rem;
+    color: white;
+    line-height: 1.2;
+    font-family: "Paytone One", serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideRight 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.Home-Text h5{
+    font-size: 18.6px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: black;
+    opacity: 0;
+    animation: slideRight 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.Home-Text p{
+    font-size: 18.6px;
+    font-family: "Lalezar", serif;
+    line-height: 30px;
+    margin-bottom: 35px;
+    color: white;
+    opacity: 0;
+    animation: slideRight 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.Home-Button{
+    display: inline-block;
+    font-size: 17.5px;
+    background: #A6AEBF;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 4px;
+    transition: ease .40s;
+    opacity: 0;
+    animation: ZoomOut 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.Home-Button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+.About{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9rem;
+}
+
+.About-IMG{
+    padding: 100px;
+}
+
+.About-IMG img{
+    width: 100%;
+    height: auto;
+    border-radius: 36px;
+    margin: 80px;
+    opacity: 0;
+    animation: ZoomOut 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.About-Text h2{
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: slideRight 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.About-Text p{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    color: aliceblue;
+    margin-top: 20px;
+    opacity: 0;
+    animation: slideRight 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.About-Button{
+    display: inline-block;
+    font-size: 17.5px;
+    background: #A6AEBF;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin-top: 50px;
+    transition: ease .40s;
+    opacity: 0;
+    animation: ZoomOut 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.About-Button:hover{
+    background-color: gray;
+    color: black;
+    transform: scale(1.1);
+}
+
+.CIMG img{
+    background: transparent;
+    width: 80px;
+}
+
+header.NAV{
+    background: black;
+    padding: 10px 18%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.NAV span{
+    color: aqua;
+    font-family: "Lalezar", serif;
+}
+
+.TEXT3 h2{
+    font-size: 55px;
+    line-height: 1.4;
+    text-align: center;
+    opacity: 0;
+    animation: slideRight 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.ROWLIST{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+    
+}
+
+.ContainerBox{
+    background: #A6AEBF;
+    border: 1px solid white;
+    padding: 50px 10px;
+    width: 214px;
+    margin: auto;
+    border-radius: 50px;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+    opacity: 0;
+    animation: ZoomOut 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.ROWLIST h4, p{
+    color: black;
+    font-family: "Lalezar", serif;
+    font-size: 20px;
+}
+
+.ContainerBox:hover{
+    box-shadow: 5px 30px 57px white;
+    border: 1px solid transparent;
+    transform: translateY(-4px);
+}
+
+.TITLE h2{
+    font-size: 55px;
+    line-height: 6.4;
+    text-align: center;
+    opacity: 0;
+    animation: slideRight 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.Package-Content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 6rem;
+    align-items: center;
+    margin-top: -4rem;
+    padding: 60px;
+    opacity: 0;
+    animation: ZoomOut 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.IMG2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.IMG2{
+    position: relative;
+    transition: all .3s cubic-bezier(.444,.05,.55,.95);
+    will-change: filter;
+    cursor: pointer;
+}
+
+.IMG2 h3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: right;
+    color: white;
+    top: 36px;
+    right: 40px;
+}
+
+.CITYNAME{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.IMG2:hover{
+    filter: brightness(90%) hue-rotate(46deg);
+    transform: scale(1.05);
+}
+
+.TITLE2 h2{
+    font-size: 55px;
+    line-height: 6.4;
+    text-align: center;
+    opacity: 0;
+    animation: slideRight 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.Destination-Content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 6rem;
+    align-items: center;
+    margin-top: -4rem;
+    padding: 60px;
+    opacity: 0;
+    animation: ZoomOut 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.IMG3 img{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.CITYNAME2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.IMG3:hover{
+    filter: brightness(90%) hue-rotate(46deg);
+    transform: scale(1.05);
+}
+
+.Contact{
+    background-color: #222831;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 700px;
+    margin-block: 40px;
+    margin-inline: 315px;
+}
+
+.TITLE3 h2{
+    font-size: 55px;
+    line-height: 1.4;
+    text-align: center;
+    opacity: 0;
+    animation: slideLeft 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.Details-Items{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-inline: 206px;
+    padding: 10px;
+    margin-block-start: 24px;
+    border-radius: 5px;
+    opacity: 0;
+    animation: slideLeft 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.Details-Items i{
+    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    background: white;
+    border-radius: 30px;
+    padding: 22px;
+    color: black;
+}
+
+form input, form textarea{
+    width: 68%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 24px;
+    opacity: 0;
+    animation: ZoomOut 1s ease forwards;
+    animation-delay: 1.2s;
+    
+}
+
+form{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Details-Items span{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Lalezar", serif;
+}
+
+form button{
+    padding: 10px;
+    background-color: #A6AEBF;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    opacity: 0;
+    animation: ZoomOut 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+form button:hover{
+    background-color: gray;
+    color: black;
+    transform: scale(1.1);
+}
+
+.ExplodeWorld{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    grid-gap: 3rem;
+}
+
+.News-Text{
+    margin-inline: 180px;
+}
+
+.News-Text h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+    opacity: 0;
+    animation: slideLeft 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.News-Text p{
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    font-family: "Patua One", serif;
+    opacity: 0;
+    animation: slideLeft 1.4s ease forwards;
+    animation-delay: 1s;
+}
+
+.ExplodeWorld form{
+    max-width: 100%;
+    width: 450px;
+    position: relative;
+}
+
+.ExplodeWorld form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 150px 20px 30px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    background-color: #181C14;
+    color: white;
+    opacity: 0;
+    animation: ZoomOut 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.ExplodeWorld form input:last-child{
+    display: inline-block;
+    position: absolute;
+    outline: none;
+    border: none;
+    margin-top: 90px;
+    padding: 12px;
+    line-height: 1.4;
+    border-radius: 36px;
+    background: #A6AEBF;
+    color: black;
+    top: -10px;
+    right: 66px;
+    cursor: pointer;
+    opacity: 0;
+    animation: ZoomOut 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.ExplodeWorld form input:last-child:hover{
+    background-color: gray;
+    color: black;
+    transform: scale(1.0);
+}
+
+.FOOTER{
+    background: #222831;
+    margin-top: 114px;
+}
+
+.Main1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Footer-Container{
+    padding: 20px 0;
+}
+
+.List{
+    width: 25%;
+}
+
+.List h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+    font-family: "Patua One", serif;
+}
+
+.List h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+}
+
+.List ul li:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.List ul li a{
+    color: whitesmoke;
+    font-size: 20px;
+    display: block;
+    transition: .3s;
+    font-family: "Pavanam", serif;
+}
+
+.List ul li a:hover{
+    color: aqua;
+    transform: translateX(14px);
+}
+
+.List .SOCIAL-MEDIA a{
+    height: 40px;
+    width: 40px;
+    background: #A6AEBF;
+    color: #181C14;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 24px;
+    transition: .3s;
+    margin-right: 10px;
+}
+
+.List .SOCIAL-MEDIA a:hover{
+    transform: scale(1.1);
+    background: black;
+    color: aqua;
+}
+
+.End-Captions{
+    text-align: center;
+    padding-top: 18px;
+    font-family: "Pavanam", serif;
+}
+
+.End-Captions p{
+    color: whitesmoke;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.Logo2{
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    margin-inline: 53px;
+    font-family: "Kumar One", serif;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+
+.Logo2 span{
+    color: black;
+}
+
+.Logo2:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+.Logo2 span:hover{
+    color: aqua;
+    transform: scale(1.1);
+}
+
+#ScrollToTopBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#ScrollToTopBtn:hover {
+    background-color: gray;
+    transform: scale(1.1);
+    color: black;
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideSci{
+    0%{
+        transform: translateX(100px) rotate(45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0) rotate(45deg);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes ZoomOut{
+    0%{
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Mackbook Pro Viewport (1024px x up) */
+@media screen and (max-width: 1024px){
+    header{
+        padding: 30px 8%;
+    }
+
+    .Navbar{
+        animation: slideLeft 1.4s ease forwards;
+    }
+
+    .Logo{
+        animation: slideRight 1.4s ease forwards;
+    }
+
+    .Home{
+        padding: 80px 8%;
+    }
+
+    .Home-Text{
+        animation: slideLeft 1.4s ease forwards;
+    }
+
+    .About{
+        gap: 6rem;
+    }
+
+    .About-IMG{
+        animation: slideLeft 1.4s ease forwards;
+    }
+
+    .About-Text{
+        animation: slideRight 1.4s ease forwards;
+    }
+
+    .About-Text{
+        animation: slideRight 1.4s ease forwards;
+    }
+
+    .Contact{
+        width: 700px;
+        margin-inline: auto;
+        animation: slideRight 1.4s ease forwards;
+    }
+}
+
+/* Surface Pro 4 Viewport (912px x 1368px) */
+@media screen and (min-width: 912px) and (max-width: 1024px) {
+    /* Hide navbar by default */
+    .Navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        transition: 0.5s ease;
+    }
+
+    /* Show menu button */
+    #Menu-Button {
+        display: block;
+        color: white;
+        font-size: 36px;
+        margin-right: 20px;
+    }
+
+    /* Style for opened menu icon */
+    #Menu-Button.bx-x {
+        transform: rotate(180deg);
+        transition: .5s;
+    }
+
+    /* Header & Navigation */
+    header {
+        padding: 25px 10%;
+    }
+
+    .Logo {
+        font-size: 28px;
+    }
+
+    /* Style navbar items */
+    .Navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    /* When navbar is active */
+    .Navbar.active {
+        right: 0;
+        display: flex;
+    }
+
+    /* Home Section */
+    .Home {
+        padding: 60px 10%;
+        height: 90vh;
+    }
+
+    .Home-Text h1 {
+        font-size: 6.5rem;
+        line-height: 1.1;
+    }
+
+    .Home-Text h5 {
+        font-size: 36px;
+        letter-spacing: 5px;
+    }
+
+    .Home-Text p {
+        font-size: 36px;
+        line-height: 33px;
+        margin-bottom: 33px;
+    }
+
+    .Home-Button {
+        font-size: 28px;
+        padding: 15px 32px
+    }
+
+    /* About Section */
+    .About {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .About-IMG {
+        padding: 50px;
+    }
+
+    .About-IMG img {
+        max-width: 80%;
+        margin: 36px auto;
+        display: block;
+    }
+
+    .About-Text {
+        padding: 40px 20%;
+        text-align: center;
+    }
+
+    .About-Text h2 {
+        font-size: 80px;
+        margin-bottom: 40px;
+    }
+
+    .About-Text p {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    /* Services Section */
+    .TEXT3 h2 {
+        font-size: 90px;
+    }
+
+    .ROWLIST {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin-top: 8rem;
+        padding: 0 10%;
+    }
+
+    .ContainerBox {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Package Section */
+    .TITLE h2 {
+        font-size: 90px;
+        line-height: 4;
+    }
+
+    .Package-Content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 4rem;
+        padding: 40px 10%;
+    }
+
+    .IMG2 h3 {
+        font-size: 26px;
+        top: 30px;
+        right: 30px;
+    }
+
+    /* Destination Section */
+    .TITLE2 h2 {
+        font-size: 90px;
+        line-height: 4;
+    }
+
+    .Destination-Content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 4rem;
+        padding: 40px 10%;
+    }
+
+    /* Contact Section */
+    .Contact {
+        width: 80%;
+        margin: 40px auto;
+        padding: 25px;
+    }
+
+    .TITLE3 h2 {
+        font-size: 80px;
+    }
+
+    .Details-Items {
+        margin-inline: 100px;
+        gap: 30px;
+    }
+
+    form input, 
+    form textarea {
+        width: 80%;
+    }
+
+    /* Newsletter Section */
+    .News-Text {
+        margin-inline: 100px;
+    }
+
+    .News-Text h2 {
+        font-size: 35px;
+    }
+
+    .News-Text p {
+        font-size: 16px;
+    }
+
+    .ExplodeWorld form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Footer Section */
+    .FOOTER {
+        margin-top: 90px;
+    }
+
+    .Main1 {
+        padding: 0 10%;
+    }
+
+    .List {
+        width: 48%;
+        margin-bottom: 24px;
+    }
+
+    .List h4 {
+        font-size: 20px;
+    }
+
+    .List ul li a {
+        font-size: 18px;
+    }
+
+    .Logo2 {
+        font-size: 40px;
+        margin-inline: 30px;
+    }
+
+    .End-Captions {
+        padding-top: 15px;
+    }
+
+    /* Scroll Button */
+    #ScrollToTopBtn {
+        bottom: 18px;
+        right: 26px;
+        font-size: 24px;
+        padding: 14px;
+    }
+}
+
+/* iPhone 13 Pro Viewport (390px x 844px) */
+@media screen and (min-width: 390px) and (max-width: 844px) {
+    /* Header & Navigation */
+    header {
+        padding: 15px 5%;
+    }
+
+    .Logo {
+        font-size: 24px;
+    }
+
+    .Navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 15px;
+        transition: 0.5s ease;
+    }
+
+    .Navbar.active {
+        right: 0;
+        display: flex;
+    }
+
+    #Menu-Button {
+        display: block;
+        color: white;
+        font-size: 28px;
+        margin-right: 10px;
+    }
+
+    /* Home Section */
+    .Home {
+        padding: 40px 5%;
+        height: 80vh;
+        background-position: center 70%;
+    }
+
+    .Home-Text h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+
+    .Home-Text h5 {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+
+    .Home-Text p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+
+    .Home-Button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* About Section */
+    .About {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .About-IMG {
+        padding: 20px;
+    }
+
+    .About-IMG img {
+        max-width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .About-Text {
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .About-Text h2 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .About-Text p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* Services Section */
+    .TEXT3 h2 {
+        font-size: 35px;
+        line-height: 4;
+    }
+
+    .ROWLIST {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 4rem;
+        padding: 0 5%;
+    }
+
+    .ContainerBox {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Package Section */
+    .TITLE h2 {
+        font-size: 35px;
+        line-height: 6;
+    }
+
+    .Package-Content {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        padding: 20px 5%;
+    }
+
+    .IMG2 h3 {
+        font-size: 22px;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Destination Section */
+    .TITLE2 h2 {
+        font-size: 35px;
+        line-height: 6;
+    }
+
+    .Destination-Content {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        padding: 20px 5%;
+    }
+
+    /* Contact Section */
+    .Contact {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .TITLE3 h2 {
+        font-size: 35px;
+    }
+
+    .Details-Items {
+        margin-inline: 20px;
+        gap: 20px;
+    }
+
+    .Details-Items i {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    form input, 
+    form textarea {
+        width: 90%;
+    }
+
+    /* Newsletter Section */
+    .News-Text {
+        margin-inline: 64px;
+    }
+
+    .News-Text h2 {
+        font-size: 28px;
+    }
+
+    .News-Text p {
+        font-size: 14px;
+    }
+
+    .ExplodeWorld form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .ExplodeWorld form input:first-child {
+        padding: 15px 168px 15px 20px;
+    }
+
+    .ExplodeWorld form input:last-child {
+        right: -1px;
+        padding: 8px
+    }
+
+    /* Footer Section */
+    .FOOTER {
+        margin-top: 60px;
+    }
+
+    .Main1 {
+        padding: 0 5%;
+    }
+
+    .List {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .List h4 {
+        font-size: 18px;
+    }
+
+    .List h4::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .List ul li a {
+        font-size: 16px;
+    }
+
+    .Logo2 {
+        font-size: 32px;
+        margin-inline: 15px;
+    }
+
+    .End-Captions {
+        padding-top: 10px;
+    }
+
+    /* Scroll Button */
+    #ScrollToTopBtn {
+        bottom: 10px;
+        right: 15px;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
