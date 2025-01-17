@@ -1,9 +1,13 @@
+/*lists of fonts family by css styes*/
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pavanam&display=swap');
 
+/*Global Tag Section*/
+/*Home Page*/
+/*universal selector tag*/
 *{
     margin: 0;
     padding: 0;
@@ -14,11 +18,13 @@
     scroll-behavior: smooth;
 }
 
+/*Login Page*/
 body{
     background: black;
     color: white;
 }
 
+/*Navigation Bar & Hero Section*/
 header{
     position: fixed;
     top: 0;
@@ -49,6 +55,7 @@ span{
     font-family: "Lalezar", serif;
 }
 
+/*Navigation Bar Section shows hidden displayed*/
 .Navbar3{
     gap: 6px;
     display: flex;
@@ -76,6 +83,7 @@ span{
     border-radius: 4.4px;
 }
 
+/*Login Section*/
 .Login-Container{
     flex: 1;
     display: flex;
@@ -129,6 +137,7 @@ span{
     background-color: grey;
 }
 
+/*Footer Section*/
 .FOOTER1{
     background: #222831;
     margin-top: 114px;
@@ -240,6 +249,7 @@ span{
     transform: scale(1.1);
 }
 
+/*keyframe animation*/
 @keyframes slideRight{
     0%{
         transform: translateX(-100px);
@@ -301,6 +311,7 @@ span{
     }
 }
 
+/*Responsive Design*/
 /* Mackbook Pro Viewport (1024px x up) */
 @media screen and (min-width: 1024px) {
     header {

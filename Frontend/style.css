@@ -1,9 +1,13 @@
+/*lists of fonts family by css styes*/
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pavanam&display=swap');
 
+/*Global Tag Section*/
+/*Home Page*/
+/*universal selector tag*/
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +23,7 @@ body{
     color: white;
 }
 
+/*Navigation Bar & Hero Section*/
 header{
     position: fixed;
     top: 0;
@@ -33,6 +38,7 @@ header{
     transition: ease .40s;
 }
 
+/*Logo Section*/
 .Logo{
     font-size: 30px;
     font-weight: 600;
@@ -43,6 +49,7 @@ header{
     animation: slideRight 1s ease forwards;
 }
 
+/*Hero Section*/
 span{
     color: black;
     font-family: "Lalezar", serif;
@@ -73,6 +80,7 @@ span{
     border-radius: 4.4px;
 }
 
+/*Menu Button Section*/
 #Menu-Button{
     color: black;
     font-size: 36px;
@@ -148,6 +156,7 @@ span{
     transform: scale(1.1);
 }
 
+/*About Section*/
 .About{
     display: grid;
     align-items: center;
@@ -210,6 +219,7 @@ span{
     transform: scale(1.1);
 }
 
+/*Services Section*/
 .CIMG img{
     background: transparent;
     width: 80px;
@@ -271,6 +281,7 @@ header.NAV{
     transform: translateY(-4px);
 }
 
+/*Contact Section*/
 .TITLE h2{
     font-size: 55px;
     line-height: 6.4;
@@ -328,6 +339,7 @@ header.NAV{
     transform: scale(1.05);
 }
 
+/*Destination Section*/
 .TITLE2 h2{
     font-size: 55px;
     line-height: 6.4;
@@ -368,6 +380,7 @@ header.NAV{
     transform: scale(1.05);
 }
 
+/*Contact Section*/
 .Contact{
     background-color: #222831;
     padding: 30px;
@@ -458,6 +471,7 @@ form button:hover{
     transform: scale(1.1);
 }
 
+/*Animation*/
 .ExplodeWorld{
     display: flex;
     flex-wrap: wrap;
@@ -534,6 +548,7 @@ form button:hover{
     transform: scale(1.0);
 }
 
+/*Footer Section*/
 .FOOTER{
     background: #222831;
     margin-top: 114px;
@@ -645,6 +660,7 @@ form button:hover{
     transform: scale(1.1);
 }
 
+/*Scroll to Top Button*/
 #ScrollToTopBtn{
     display: none;
     position: fixed;
@@ -667,6 +683,7 @@ form button:hover{
     color: black;
 }
 
+/*Keyframes of Animation for differnt section tag and images of websites*/
 @keyframes slideRight{
     0%{
         transform: translateX(-100px);
@@ -728,20 +745,25 @@ form button:hover{
     }
 }
 
+/* Responsive Design */
 /* Mackbook Pro Viewport (1024px x up) */
 @media screen and (max-width: 1024px){
+    /* show full navbar by default */
     header{
         padding: 30px 8%;
     }
 
+    /* Navbar Section */
     .Navbar{
         animation: slideLeft 1.4s ease forwards;
     }
 
+    /* logo Section */
     .Logo{
         animation: slideRight 1.4s ease forwards;
     }
 
+    /* Home Section */
     .Home{
         padding: 80px 8%;
     }
@@ -750,6 +772,7 @@ form button:hover{
         animation: slideLeft 1.4s ease forwards;
     }
 
+    /* About Section */
     .About{
         gap: 6rem;
     }
@@ -766,6 +789,7 @@ form button:hover{
         animation: slideRight 1.4s ease forwards;
     }
 
+    /* Contact Section */
     .Contact{
         width: 700px;
         margin-inline: auto;
