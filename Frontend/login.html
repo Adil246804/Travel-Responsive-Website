@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Website Title-->
     <title>TRAVEL</title>
+    <!--Link to CSS Stylesheet-->
     <link rel="stylesheet" href="loginpage.css">
+    <!--Icon Link For Website Icon-->
     <link rel="icon" href="Images/LOGO.png" type="image/x-icon">
+    <!--CSS Link For Fontawesome Icons with cdnjs-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css">
 </head>
 <body>
+    <!--Header Tag For Navbar & Logo-->
     <header>
+        <!--Logo Tag From Left Side-->
         <a href="index.html" class="Logo4">TRA<span>VEL</span></a>
-
+        <!--List Of Navigation Bar With each index page to go back to home page-->
         <ul class="Navbar3">
+            <!-- Navigation Bar is displayed shows hidden-->
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html">About</a></li>
             <li><a href="index.html">Service</a></li>
@@ -26,45 +33,65 @@
         </ul>
     </header>
 
+    <!--Login Page Form With Email & Password Field-->
     <div class="Login-Container">
+        <!--Login Box Conatiner-->
         <div class="Login-Box">
+            <!--Title Of Login Page-->
             <h2>LOGIN</h2>
+            <!--Email & Password Field-->
             <input type="text" id="login-email" placeholder="Enter Your Username Or Email" required>
             <input type="password" id="login-password" placeholder="Enter Your Password" required>
+            <!--Link To Create New Account-->
             <p>New Here? <a href="signup.html">Create An Account</a></p>
+            <!--Button To Submit Login Form-->
             <button type="button" onclick="login()">LOGIN</button>
+            <!--Success & Error Message-->
             <p id="login-message" style="color: green; display: none;">Login Successful!</p>
+            <!--Error Message-->
             <p id="login-error" style="color: red; display: none;">Invalid Credentials</p>
         </div>
     </div>
 
+    <!--Footer Section Tag For Information Of Travel.com with social media icons-->
     <section class="FOOTER1">
+        <!--Container For Footer Information-->
         <div class="Footer-Container1">
             <div class="Main2">
+                <!--logo tag-->
                 <div class="List1">
                     <a href="index.html" class="Logo3">TRA<span>VEL</span></a>
                 </div>
 
+                <!--list of footer-->
                 <div class="List1">
+                    <!--links tag-->
                     <h4>Quick Links</h4>
                     <ul>
+                        <!--listed name-->
                         <li><a href="#">Terms & Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Help</a></li>
                     </ul>
                 </div>
 
+                <!--list of footer-->
                 <div class="List1">
+                    <!--support tag-->
                     <h4>Support</h4>
                     <ul>
+                        <!--listed name-->
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Location / About</a></li>
                         <li><a href="#">News</a></li>
                     </ul>
                 </div>
 
+                <!--list of footer-->
                 <div class="List1">
+                    <!--help to follow tag-->
                     <h4>Follow Us</h4>
+                    <!--social media icons-->
                     <div class="SOCIAL-MEDIA1">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -75,11 +102,14 @@
             </div>
         </div>
 
+        <!--End Caption Section-->
         <div class="End-Captions1">
+            <!--end of copyright of travel website with name-->
             <p>Copyright &copy; 2024 Travel. All Rights Reserved | Made By Mohd Adil Hossain</p>
         </div>
     </section>
 
+    <!--JavaScript For Login Functionality-->
     <script src="loginpage.js"></script>
 </body>
 </html>
