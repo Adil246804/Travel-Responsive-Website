@@ -1,8 +1,10 @@
+// Importing required modules
 import express from 'express';
 import User from '../models/userModel.js';
 const router = express.Router();
 
 
+// POST /api/user
 router.post('/',async(req, res)=>{
     const {First_name, Last_name, email, password} = req.body;
     try {
@@ -14,6 +16,7 @@ router.post('/',async(req, res)=>{
     }
 });
 
+// POST /api/user/login
 router.post('/login', async(req, res)=>{
     const {email, password} = req.body;
 
@@ -28,4 +31,5 @@ router.post('/login', async(req, res)=>{
     }
 })
 
+// GET /api/user/:id
 export default router;
